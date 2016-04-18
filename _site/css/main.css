@@ -58,6 +58,15 @@ body {
 .cf:after {
   clear: both; }
 
+h1 {
+  font-size: 5.9vw; }
+
+h2 {
+  font-size: 3vh; }
+
+p {
+  font-size: 2vmin; }
+
 a {
   text-decoration: none;
   color: #3498db; }
@@ -72,3 +81,7 @@ h2 {
 
 section {
   margin: auto 20%; }
+
+@media only screen and (min-width: 768px) {
+  section {
+    margin: auto 10%; } }
