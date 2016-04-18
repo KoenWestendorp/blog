@@ -58,15 +58,6 @@ body {
 .cf:after {
   clear: both; }
 
-h1 {
-  font-size: 5.9vw; }
-
-h2 {
-  font-size: 3vh; }
-
-p {
-  font-size: 2vmin; }
-
 a {
   text-decoration: none;
   color: #3498db; }
@@ -77,11 +68,38 @@ em {
   color: #e74c3c; }
 
 h2 {
-  margin-left: -20px; }
+  margin-left: -2.5%; }
 
 section {
   margin: auto 20%; }
 
 @media only screen and (min-width: 768px) {
   section {
-    margin: auto 10%; } }
+    margin: auto 10%; }
+
+  a {
+    text-decoration: none;
+    color: #3498db; }
+    a:hover {
+      text-decoration: underline; }
+
+  em {
+    color: #e74c3c; }
+
+  h2 {
+    margin-left: -2.5%; } }
+@media only screen and (min-width: 480px) {
+  section {
+    margin: auto 5%; }
+
+  a {
+    text-decoration: none;
+    color: #3498db; }
+    a:hover {
+      text-decoration: underline; }
+
+  em {
+    color: #e74c3c; }
+
+  h2 {
+    margin-left: -1%; } }
