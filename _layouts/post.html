@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+
+    <div class="post_nav">
+      <div class="back">
+        <a href="/index.html">&lt; back</a>
+      </div>
+      <div class="next_prev">
+      {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="prev">&lt; day {{ page.previous.day }}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="next">day {{ page.next.day }} &gt;</a>
+      {% endif %}
+      </div>
+    </div>
+
+    <section id="post" class="cf">
+      {{ content }}
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

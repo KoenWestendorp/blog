@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css);
+header h1 {
+  text-align: center;
+  margin: 50px; }
+  header h1 a {
+    text-decoration: none;
+    color: #11181e; }
+    header h1 a:hover {
+      text-decoration: none;
+      color: #364c5f; }
+header .top_line {
+  width: 100%;
+  height: 5px;
+  background-color: #2ecc71; }
+
+.post_nav {
+  margin-bottom: 20px; }
+  .post_nav a {
+    text-decoration: none;
+    color: #3498db; }
+    .post_nav a:hover {
+      text-decoration: underline; }
+  .post_nav div.back {
+    float: left;
+    margin-left: 20%; }
+  .post_nav div.next_prev {
+    float: right;
+    margin-right: 20%; }
+    .post_nav div.next_prev a.next {
+      margin-left: 20px; }
+
+#post em {
+  color: #e74c3c; }
+
+#posts a.post {
+  color: #11181e; }
+  #posts a.post span.date {
+    color: #3498db; }
+  #posts a.post span.day {
+    color: #2ecc71; }
+  #posts a.post span.title {
+    color: #e74c3c; }
+  #posts a.post span.hyphen {
+    color: #11181e; }
+#posts:visited {
+  text-decoration: line-through; }
+
+body {
+  margin: 0;
+  font-family: Menlo, "Inconsolata", monospace;
+  color: #11181e; }
+
+.cf:before, .cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+a {
+  text-decoration: none;
+  color: #3498db; }
+  a:hover {
+    text-decoration: underline; }
+
+em {
+  color: #e74c3c; }
+
+h2 {
+  margin-left: -20px; }
+
+section {
+  margin: auto 20%; }

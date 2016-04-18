@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Home"
+fulltitle: "Website homepage"
+excerpt: This is the homepage of my website
+tabtitle: Home
+---
+
+
+  <section id="info">
+    <h2>{{ site.title }} info</h2>
+    <p>
+      The <a href="{{ site.codish_themesite }}">codish_theme</a> is build to make for very fast websites, with nicely ordered content.
+    </p>
+  </section>
+  <section id="posts">
+    <h2>The blog Posts</h2>
+    {% for post in site.posts %}
+    <div id="post_list">
+  	 	<a href="{{ post.url }}" class="post">
+        <span class="date">{{ post.date | date: '%B %d, %Y' }}<span class="hyphen"> - </span></span>
+        <span class="day">Day {{ post.day }}<span class="hyphen"> - </span></span>
+        <span class="title">{{ post.title }}</span>
+      </a>
+    </div>
+    {% endfor %}
+	</section>
