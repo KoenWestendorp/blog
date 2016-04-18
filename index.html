@@ -10,7 +10,7 @@ tabtitle: Home
   <section id="info">
     <h2>{{ site.title }} info</h2>
     <p>
-      The <a href="{{ site.codish_themesite }}">codish_theme</a> is build to make for very fast websites, with nicely ordered content.
+      The <a href="{{ site.codish_themesite }}">{{ site.title }}</a> is build to make for very fast websites, with nicely ordered content.
     </p>
   </section>
   <section id="posts">
@@ -19,7 +19,7 @@ tabtitle: Home
     <div id="post_list">
   	 	<a href="{{ post.url }}" class="post">
         <span class="date">{{ post.date | date: '%B %d, %Y' }}<span class="hyphen"> - </span></span>
-        <span class="day">Day {{ post.day }}<span class="hyphen"> - </span></span>
+        <span class="day">Day {{ post.day }}<span class="hyphen hyphen_title"> - </span><br class="br"></span>
         <span class="title">{{ post.title }}</span>
       </a>
     </div>

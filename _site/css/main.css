@@ -71,11 +71,23 @@ h2 {
   margin-left: -2.5%; }
 
 section {
-  margin: auto 20%; }
+  margin: 10px 20%; }
 
-@media only screen and (min-width: 768px) {
-  section {
-    margin: auto 10%; }
+br.br {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  section, .post_nav {
+    margin: 10px 10%; }
+
+  span.hyphen_title {
+    display: none; }
+
+  br.br {
+    display: block; }
+
+  a.post {
+    line-height: 30px; }
 
   a {
     text-decoration: none;
@@ -88,9 +100,18 @@ section {
 
   h2 {
     margin-left: -2.5%; } }
-@media only screen and (min-width: 480px) {
-  section {
-    margin: auto 5%; }
+@media only screen and (max-width: 480px) {
+  section, .post_nav {
+    margin: 10px 5%; }
+
+  span.hyphen_title {
+    display: none; }
+
+  a.post {
+    line-height: 30px; }
+
+  div.post_list br.br {
+    display: block; }
 
   a {
     text-decoration: none;
@@ -102,4 +123,4 @@ section {
     color: #e74c3c; }
 
   h2 {
-    margin-left: -1%; } }
+    margin-left: 0; } }
