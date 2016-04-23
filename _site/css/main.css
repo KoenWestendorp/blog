@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css);
 header h1 {
   text-align: center;
@@ -14,6 +13,31 @@ header .top_line {
   height: 5px;
   background-color: #2ecc71; }
 
+footer {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: auto; }
+  footer a {
+    color: #fff5fd; }
+  footer .wrapper .social {
+    text-align: left; }
+  footer .wrapper .nav {
+    text-align: right; }
+
+/* <footer>
+ * <div class="wrapper">
+ *   <div class="social">
+ *     <a href="" class="twitter">twitter</a>
+ *     <a href="" class="github">github</a>
+ *   </div>
+ *   <div class="nav">
+ *     <a href="" class="home">home</a>
+ *     <a href="" class="back">back</a>
+ *     <a href="" class="sitemap">sitemap</a>
+ *   </div>
+ * </div> </footer> */
 .post_nav {
   margin-bottom: 20px; }
   .post_nav a {
@@ -30,8 +54,11 @@ header .top_line {
     .post_nav div.next_prev a.next {
       margin-left: 20px; }
 
-#post em {
-  color: #e74c3c; }
+section#post p::first-letter {
+  -webkit-initial-letter: 3;
+  initial-letter: 3;
+  color: #2ecc71;
+  margin-right: 0.5em; }
 
 #posts a.post {
   color: #11181e; }
@@ -46,9 +73,12 @@ header .top_line {
 #posts:visited {
   text-decoration: line-through; }
 
+html {
+  background-color: #fff5fd; }
+
 body {
   margin: 0;
-  font-family: Menlo, "Inconsolata", monospace;
+  font-family: Menlo, monospace;
   color: #11181e; }
 
 .cf:before, .cf:after {
@@ -70,14 +100,11 @@ em {
 h2 {
   margin-left: -2.5%; }
 
-section {
-  margin: 10px 20%; }
-
 br.br {
   display: none; }
 
 @media only screen and (max-width: 768px) {
-  section, .post_nav {
+  .side_margin {
     margin: 10px 10%; }
 
   span.hyphen_title {
@@ -101,7 +128,7 @@ br.br {
   h2 {
     margin-left: -2.5%; } }
 @media only screen and (max-width: 480px) {
-  section, .post_nav {
+  .side_margin {
     margin: 10px 5%; }
 
   span.hyphen_title {
@@ -124,3 +151,5 @@ br.br {
 
   h2 {
     margin-left: 0; } }
+.wrapper {
+  width: 100%; }

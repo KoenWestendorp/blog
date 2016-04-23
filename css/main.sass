@@ -1,7 +1,7 @@
 ---
 ---
 
-$white: #f5fdff
+$white: #fff5fd
 $blue: #3498db
 $red: #e74c3c
 $green: #2ecc71
@@ -9,15 +9,19 @@ $black: #11181e
 
 
 @import "header.sass"
+@import "footer.sass"
 @import "post.sass"
 @import "home.sass"
 
-@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700)
+// @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700)
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css)
+
+html
+  background-color: $white
 
 body
   margin: 0
-  font-family: Menlo, 'Inconsolata', monospace
+  font-family: Menlo, monospace
   color: $black
 
 .cf:before, .cf:after
@@ -41,13 +45,13 @@ h2
 
 
 section
-  margin: 10px 20%
+  .side_margin
 
 br.br
   display: none
 
 @media only screen and (max-width: 768px)
-  section, .post_nav
+  .side_margin
     margin: 10px 10%
 
   span.hyphen_title
@@ -72,7 +76,7 @@ br.br
 
 
 @media only screen and (max-width: 480px)
-  section, .post_nav
+  .side_margin
     margin: 10px 5%
 
   span.hyphen_title
@@ -96,3 +100,6 @@ br.br
 
   h2
     margin-left: 0
+
+.wrapper
+  width: 100%
