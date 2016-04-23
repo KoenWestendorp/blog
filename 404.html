@@ -1,0 +1,37 @@
+---
+layout: default
+title: "404"
+fulltitle: "404 not found :-("
+excerpt: The page you're brought to if you are lost
+tabtitle: 404 :-(
+permalink: /404.html
+---
+
+
+  <section id="404" class="side_margin">
+    <h1>
+      404
+    </h1>
+    <p>Unfortunatly you failed at not getting lost...</p><br>
+    <p>This <a href="index.html">link</a> will hopefully get you back on track,</p>
+    <p>or you are being redirected to the home page in <em id="done">redirecting...</em><em id="countdown">10</em> seconds</p>
+  </section>
+  <script type="text/javascript">
+    var done = document.getElementById("done");
+    var counter = 10;
+    var newElement = document.getElementById("countdown");
+    newElement.innerHTML = "10";
+    var id;
+
+    done.parentNode.replaceChild(newElement, done);
+
+    id = setInterval(function() {
+        counter--;
+        if(counter <= 0) {
+            newElement.parentNode.replaceChild(done, newElement);
+            clearInterval(id);
+        } else if(counter < 10) {
+            newElement.innerHTML = "0" + counter.toString();
+        }
+    }, 1000);
+  </script>

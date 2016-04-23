@@ -14,19 +14,22 @@ header .top_line {
   background-color: #2ecc71; }
 
 footer {
-  background-color: blue;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  align-content: space-around;
-  margin-bottom: 0; }
+  background-color: #e74c3c; }
   footer a {
     color: #fff5fd; }
-  footer .wrapper .social {
-    text-align: left; }
-  footer .wrapper .nav {
-    text-align: right; }
+  footer div.parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 0; }
+    footer div.parent div.social {
+      text-align: left; }
+    footer div.parent div.nav {
+      text-align: right; }
 
 /* <footer>
  * <div class="wrapper">
@@ -66,6 +69,11 @@ footer {
     color: #11181e; }
 #posts:visited {
   text-decoration: line-through; }
+
+section#404 {
+  text-align: center; }
+  section#404 h1 {
+    font-size: 4rem; }
 
 html {
   background-color: #fff5fd; }
