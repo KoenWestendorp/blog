@@ -4,7 +4,6 @@ url: "http://yourwebsite.com"
 
 sass:
   sass_dir: css
-  style: compressed
 
 exclude: [.sass, README.md, node_modules, gruntfile.js, package.json]
 
