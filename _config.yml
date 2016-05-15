@@ -3,9 +3,10 @@ tagline: "This site uses the codish_theme for Jekyll, by Koen Westendorp"
 url: "http://yourwebsite.com"
 
 sass:
-    sass_dir: css
+  sass_dir: css
+  style: compressed
 
-exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+exclude: [.sass, README.md, node_modules, gruntfile.js, package.json]
 
 codish_themesite: http://codish_theme.com
 
