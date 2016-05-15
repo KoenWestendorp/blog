@@ -1,6 +1,7 @@
 title: codish_theme
 tagline: "This site uses the codish_theme for Jekyll, by Koen Westendorp"
 url: "http://yourwebsite.com"
+base_url: "/blog/"
 
 sass:
   sass_dir: css
