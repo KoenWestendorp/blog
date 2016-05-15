@@ -11,6 +11,15 @@
     </url>
   
     <url>
+      <loc>http://yourwebsite.com/2016/04/19/day-4.html</loc>
+      
+        <lastmod>2016-04-19T00:00:00+02:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
       <loc>http://yourwebsite.com/2016/04/19/day-3.html</loc>
       
         <lastmod>2016-04-19T00:00:00+02:00</lastmod>
